@@ -1,0 +1,76 @@
+.body_component {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/bilder/fleur_6_3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    /*background-color: darkslategray !important;*/
+    /*color: white !important;*/
+    padding-top: 70px;
+    text-align: center;
+    font-family: 'Freestyle Script thin', arial;
+}
+
+.body_component>h2 {
+    font-size: 100px;
+}
+
+.btn_FaireUnVoeux {
+    position: fixed;
+    top: 160px;
+    right: 12px;
+    width: 104px;
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    color: black;
+}
+
+.gesamt_card {
+    width: 75vw;
+    height: auto;
+    position: relative;
+    left: 12.5%;
+    margin-bottom: 1rem;
+}
+
+.card_header {
+    padding: 5px 10px;
+    font-size: 30px;
+    background: rgb(250, 251, 226);
+    background: linear-gradient(292deg, rgba(250, 251, 226, 1) 0%, rgba(254, 254, 237, 1) 0%, rgba(159, 240, 157, 1) 100%);
+    /*
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(162, 190, 181, 1) 0%, rgba(80, 204, 230, 1) 100%);
+    */
+}
+
+.card_body {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.card_footer {
+    padding: 0 10px;
+    font-size: 20px;
+    background: rgb(250, 251, 226);
+    background: linear-gradient(90deg, rgba(250, 251, 226, 1) 0%, rgba(254, 254, 237, 1) 0%, rgba(159, 240, 157, 1) 100%);
+    /*
+    background: rgb(10, 10, 1);
+    background: linear-gradient(29deg, rgba(10, 10, 1, 1) 0%, rgba(226, 251, 243, 1) 0%, rgba(251, 251, 244, 1) 100%);
+    */
+}
+
+@keyframes example {
+    from {
+        background: rgb(250, 251, 226);
+        background: linear-gradient(90deg, rgba(250, 251, 226, 1) 0%, rgba(254, 254, 237, 1) 0%, rgba(159, 240, 157, 1) 100%);
+    }
+    to {
+        background: rgb(250, 251, 226);
+        background: linear-gradient(292deg, rgba(250, 251, 226, 1) 0%, rgba(254, 254, 237, 1) 0%, rgba(159, 240, 157, 1) 100%);
+    }
+}

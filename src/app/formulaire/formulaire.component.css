@@ -1,0 +1,13 @@
+.body_component {
+    width: auto;
+    height: 100vh;
+    /*background-color: darkslategray !important;*/
+}
+
+.body_form {
+    width: 700px;
+    height: 75vh;
+    /*color: white !important;*/
+    padding-top: 25vh;
+    /*text-align: center;*/
+}

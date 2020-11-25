@@ -1,0 +1,44 @@
+/* Evenement sur la navbar */
+
+@keyframes anim {
+    0% {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav {
+    color: rgb(39, 114, 114) !important;
+    /*margin: 5px auto !important;*/
+    /*margin: auto !important;*/
+    background: none !important;
+    border: none !important;
+    transition: all .5s;
+    animation-name: anim;
+    animation-duration: 1.2s;
+    text-shadow: 3px !important;
+    width: 100vw;
+}
+
+.border_pd_md a {
+    /*padding: 13px;*/
+    /*margin-left: 5px;*/
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.border_pd_md:hover {
+    background-color: rgba(0, 153, 153, .5);
+    border-radius: 5px;
+    transform: translateY(-3px);
+    font-weight: bold;
+    transition: .15s;
+}
+
+.btn_navbar {
+    background-color: aliceblue;
+}

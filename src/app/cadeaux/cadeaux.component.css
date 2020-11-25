@@ -1,0 +1,8 @@
+.body_component {
+    width: auto;
+    height: 100vh;
+    /* background-color: darkslategray !important;*/
+    /* color: white !important;*/
+    padding-top: 25vh;
+    text-align: center;
+}

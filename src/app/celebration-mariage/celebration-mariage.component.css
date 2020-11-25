@@ -1,0 +1,359 @@
+.div_body {
+    font-family: 'Freestyle Script thin', arial;
+}
+
+.div_audio {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    border: none;
+    z-index: 9;
+}
+
+.div_container {
+    /* height: 1000px;*/
+    /* margin: 50px 0 0px 80px;
+    width: auto;*/
+    width: 97VW;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 4px 4px 4px #aaa;
+    transition: all .2s;
+}
+
+.div_evenement {
+    /*position: absolute;
+    z-index: 2;*/
+    /*padding-bottom: 20px;*/
+    width: 97vw;
+    height: auto;
+    background-image: url("../../assets/bilder/fleur.JPG");
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-position: center bottom;
+    background-size: 97vw 35%;
+    /* 97% 40% */
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+.div_evenement_align {
+    display: inline-block;
+    padding-left: 3rem;
+    height: auto;
+}
+
+.text_mod {
+    /*height:42vh;*/
+    /*border: 1px solid red;*/
+    border: 1px solid rgba(0, 153, 153, .5);
+    border-radius: 40px;
+    box-shadow: 8px 5px rgba(0, 153, 153, .5);
+    /*margin-right: .5px;*/
+    text-align: center;
+    /*padding: 10px;*/
+    font-family: 'Freestyle Script thin', arial;
+    width: 260px;
+    height: 28rem;
+    position: relative;
+}
+
+.div_evenement:hover {}
+
+
+/*
+.bgImage {
+
+    height: 20rem;
+    background-image: url("../../assets/bilder/fleur_6_2.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    bottom: 7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50wh;
+    opacity: 0.8;
+    border: 1px solid black;
+
+    z-index: 1;
+}
+*/
+
+.text_mod_klein {
+    /*height:42vh;*/
+    /*border: 1px solid red;*/
+    border-radius: 5px;
+    box-shadow: 4px 5px rgba(0, 153, 153, .5);
+    /*margin-right: .5px;*/
+    text-align: center;
+    /*margin: 10px;*/
+    border: 1px solid rgba(0, 153, 153, .5);
+    height: 48vh;
+    position: relative;
+}
+
+.text_mod:hover {
+    transform: translateY(-10px);
+    transition: all .3s;
+}
+
+.text_mod_klein:hover {}
+
+
+/*
+@media only screen and (min-width: 1350px) {
+  .div_evenement {
+    margin: 0 0 0 0;
+  }
+
+  .text_mod {
+      width: 300px;
+      height: 28rem;
+    }
+
+}*/
+
+
+/*-----------------------------  Carousel  ---------------------------------*/
+
+.caroussel {
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.caroussel_klein {
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:host /deep/ carousel-item.active {
+    border: solid 0.3em;
+    border-color: red;
+}
+
+.text_mod>h4 {
+    padding: 30px 0;
+}
+
+.text_mod_klein>h4 {
+    padding: 30px 0;
+}
+
+.text_mod>p {
+    padding: 10px 0;
+}
+
+.text_mod_klein>p {
+    padding: 10px 0;
+}
+
+.formCarousel {
+    width: 50%;
+    height: 55vh;
+    position: relative;
+    top: 0;
+    left: 25%;
+    overflow: hidden;
+    /*object-fit: cover;*/
+}
+
+.btn_VoirCarte {
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}
+
+.btn_VoirCarte_klein {
+    position: absolute;
+    bottom: 3%;
+    left: 40%;
+}
+
+.carousel-control-prev-icon {
+    /* background-image: url('https://apufpel.com.br/assets/img/seta_prim.png') !important;*/
+    background-color: black !important;
+}
+
+.carousel-control-next-icon {
+    /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(50, 54, 57)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;*/
+    background-color: black !important;
+}
+
+
+/*-------------------------------  END Carousel  -----------------------------------*/
+
+
+/*-------------------------  Image Joelle et Landry  ------------------------------*/
+
+.container_img_JoLa {
+    background-color: none;
+    width: 97vw;
+    height: 50rem;
+    padding-top: 100px;
+}
+
+.bilder_complet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_inline {
+    display: inline-block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border: 1px solid red;
+}
+
+.img_Jo_La {
+    padding-top: 30px;
+    /*background-color: blanchedalmond;*/
+}
+
+.img_Jo_La>img:hover {
+    transform: scale(1.05) rotate(-3deg);
+    transition: all .5s;
+}
+
+.img_Jo_La>img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    /* vertical-align: middle;*/
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.symbol_And {
+    /*animation: element_Rotation 4s 12s linear;*/
+    animation-name: element_Rotation;
+    animation-duration: 4s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes element_Rotation {
+    0% {
+        transform: perspective(300px) rotateY(0deg)
+    }
+    25% {
+        transform: perspective(300px) rotateY(90deg)
+    }
+    50% {
+        transform: perspective(300px) rotateY(180deg)
+    }
+    75% {
+        transform: perspective(300px) rotateY(270deg)
+    }
+    100% {
+        transform: perspective(300px) rotateY(360deg)
+    }
+}
+
+.text_JoLa {
+    text-align: center;
+    /*margin-top: 3rem;*/
+    /*vertical-align: middle !important;*/
+    height: auto;
+    /*background-color: blanchedalmond;*/
+}
+
+.div_message {
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    width: 97vw;
+    /*background-color: blanchedalmond;*/
+}
+
+.div_NotreHistoire {
+    padding: 2rem 0;
+    width: 96vw;
+}
+
+
+/*------------------------  END Image Joelle et Landry  ---------------------------*/
+
+
+/*-------------------------------------------- Anpassung h1 ----------------------------------------- */
+
+@media only screen and (max-width: 900px) {
+    .div_container h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'Freestyle Script thin', arial;
+        font-size: 60px;
+        text-shadow: 4px 4px 4px #aaa;
+        transition: all .2s;
+    }
+    .img_Jo_La>img {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        object-fit: cover;
+        /* vertical-align: middle;*/
+        /*display: block;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .div_container h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'Freestyle Script thin', arial;
+        font-size: 40px;
+        text-shadow: 4px 4px 4px #aaa;
+        transition: all .2s;
+    }
+    .img_Jo_La>img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+        /* vertical-align: middle;*/
+        /*display: block;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .div_container h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: 'Freestyle Script thin', arial;
+        font-size: 20px;
+        text-shadow: 4px 4px 4px #aaa;
+        transition: all .2s;
+    }
+    .img_Jo_La>img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        /* vertical-align: middle;*/
+        /*display: block;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*--------------------------------- End Anpassung h1 ------------------------------- */

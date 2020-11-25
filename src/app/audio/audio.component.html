@@ -1,0 +1,10 @@
+<!--
+<button (click)="playAudio()"><i class="fas fa-pause-circle fa-2x"></i></button>
+
+https://www.youtube.com/watch?v=1lJm3n7yKQE
+-->
+<div class="container-fluid">
+    <a (click)="stopAudio()" *ngIf="playOrStop"><i class="far fa-pause-circle fa-lg icon_style"></i></a>
+    <a (click)="playAudio()" *ngIf="!playOrStop"><i class="fas fa-play fa-lg icon_style"></i></a>
+    <!-- icon-music    fas fa-play fa-lg -->
+</div>

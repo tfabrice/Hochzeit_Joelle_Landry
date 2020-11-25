@@ -1,0 +1,24 @@
+.gesamt {}
+
+.lien_participation {
+    width: auto;
+    background-color: bisque;
+    width: auto;
+    height: 35rem;
+    background-color: bisque;
+    text-align: center;
+}
+
+.lien_cadeau {
+    width: auto;
+    height: 35rem;
+    background-color: rgb(144, 235, 149);
+    text-align: center;
+}
+
+.lien_Voeux {
+    width: auto;
+    height: 35rem;
+    background-color: rgb(216, 119, 208);
+    text-align: center;
+}

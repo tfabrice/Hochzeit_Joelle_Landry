@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar_fixed">
+    <!-- Brand -->
+    <a class="navbar-brand" routerLink="home">Joelle&Landry</a>
+    <!--
+  <button class="navbar-toggler btn_navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> text-light
+  -->
+
+    <button class="navbar-toggler btn_navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse show" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item border_pd_md" routerLinkActive="active">
+                <a class="nav-link" routerLink="home" (click)="toggleNavbar()">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item border_pd_md" routerLinkActive="active">
+                <a class="nav-link" routerLink="formulaire" (click)="toggleNavbar()">Formulaire</a>
+            </li>
+            <li class="nav-item border_pd_md" routerLinkActive="active">
+                <a class="nav-link" routerLink="cadeaux" (click)="toggleNavbar()">Cadeaux</a>
+            </li>
+            <li class="nav-item border_pd_md" routerLinkActive="active">
+                <a class="nav-link" routerLink="wishes" (click)="toggleNavbar()">Livre d´or</a>
+            </li>
+            <li class="nav-item border_pd_md" routerLinkActive="active">
+                <a class="nav-link" routerLink="gallery" (click)="toggleNavbar()">Gallerie Photos/Videos</a>
+            </li>
+            <!--
+            <li class="nav-item border_pd_md" routerLinkActive="active">
+                <a class="nav-link" routerLink="gasts" (click)="toggleNavbar()">Admin</a>
+            </li>
+            -->
+        </ul>
+    </div>
+</nav>

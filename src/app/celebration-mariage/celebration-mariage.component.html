@@ -1,0 +1,205 @@
+<!-- Programme -->
+<div class="div_body">
+    <div class="div_container">
+
+        <h1>Celebration du mariage</h1>
+
+        <div class="div_evenement" *ngIf="tailleEcran()">
+            <div class="div_evenement_align" *ngFor="let element of tableauElementCelbrationMariage">
+                <div class="text_mod">
+                    <h4> {{ element.evenement }} </h4>
+                    <p *ngIf="celMariage">
+                        La largeur de l´écran est de {{ getSreenWidth() }}
+                    </p>
+                    <div>
+                        <p> {{ element.date }} </p>
+                        <p> {{ element.ville }} </p>
+                        <p> {{ element.heure }} </p>
+                        <p> {{ element.lieu }} </p>
+                        <button class="btn btn-success btn_VoirCarte">Voir la carte</button>
+                    </div>
+                </div>
+            </div>
+            <!--    1er
+            <div class="col-sm-3" *ngFor="let element of tableauElementCelbrationMariage">
+                <div class="text_mod">
+                    <h4> {{ element.evenement }} </h4>
+                    <p *ngIf="celMariage">
+                        La largeur de l´écran est de {{ getSreenWidth() }}
+                    </p>
+                    <div>
+                        <p> {{ element.date }} </p>
+                        <p> {{ element.ville }} </p>
+                        <p> {{ element.heure }} </p>
+                        <p> {{ element.lieu }} </p>
+                        <button class="btn btn-success btn_VoirCarte">Voir la carte</button>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+        <!--
+        <div class="row div_evenement" *ngIf="!celMariage">
+            <div class="col-sm-6" *ngFor="let element of tableauElementCelbrationMariage">
+                <div class="text_mod">
+                    <h4> {{ element.evenement }} </h4>
+                    <p *ngIf="celMariage">
+                        La largeur de l´écran est de {{ getSreenWidth() }}
+                    </p>
+                    <div>
+                        <p> {{ element.date }} </p>
+                        <p> {{ element.ville }} </p>
+                        <p> {{ element.heure }} </p>
+                        <p> {{ element.lieu }} </p>
+                        <button class="btn btn-success btn_VoirCarte">Voir la carte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
+
+        <div class="div_evenement" *ngIf="!tailleEcran()">
+            <div class="">
+                <div class="caroussel_klein">
+                    <ngb-carousel>
+                        <ng-template ngbSlide *ngFor="let element of tableauElementCelbrationMariage">
+                            <div class="formCarousel">
+                                <div class="text_mod_klein">
+                                    <h4> {{ element.evenement }} </h4>
+
+                                    <p *ngIf="celMariage">
+                                        La largeur de l´écran est de {{ getSreenWidth() }}
+                                    </p>
+
+                                    <p> {{ element.date }} </p>
+                                    <p> {{ element.ville }} </p>
+                                    <p> {{ element.heure }} </p>
+                                    <p> {{ element.lieu }} </p>
+                                    <button class="btn btn-success btn_VoirCarte_klein">Voir la carte</button>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+        <!--  2eme
+        <div class="row div_evenement" *ngIf="!tailleEcran()">
+            <div class="col-lg-3 col-md-1 "></div>
+            <div class="col-lg-6 col-md-10 p-2">
+                <div class="caroussel_klein">
+                    <ngb-carousel>
+                        <ng-template ngbSlide *ngFor="let element of tableauElementCelbrationMariage">
+                            <div class="formCarousel">
+                                <div class="text_mod_klein">
+                                    <h4> {{ element.evenement }} </h4>
+                                    
+                            <p *ngIf="celMariage">
+                                La largeur de l´écran est de {{ getSreenWidth() }}
+                            </p>
+                            
+                                    <p> {{ element.date }} </p>
+                                    <p> {{ element.ville }} </p>
+                                    <p> {{ element.heure }} </p>
+                                    <p> {{ element.lieu }} </p>
+                                    <button class="btn btn-success btn_VoirCarte_klein">Voir la carte</button>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-1"></div>
+        </div>
+    -->
+        <!--
+        <div class="bgImage"></div>
+        -->
+    </div>
+
+
+
+    <!-- Audio Music -->
+    <div class="div_audio">
+
+        <app-audio></app-audio>
+
+        <!-- Audio https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_audio_pause 
+        <audio controls loop muted> 
+            <source src="../../assets/music/BenDecca_OsiDimbea.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>-->
+    </div>
+    <!-- END Audio Music -->
+
+
+    <div class="container_img_JoLa">
+        <div class="bilder_complet">
+            <div class="div_links img_Jo_La div_inline">
+                <img src="../../assets/bilder/Joelle.jpg" alt="">
+            </div>
+
+            <div class="div_mitte text_JoLa div_inline">
+                <span>Joelle</span><br>
+                <span class="symbol_And">&</span><br>
+                <span>Landry</span>
+            </div>
+
+            <div class="div_rechts img_Jo_La div_inline">
+                <img src="../../assets/bilder/Landry.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="div_message">
+            <h1>Nous allons nous marier</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque. Provident, eius quas, doloremque velit non, porro officia nulla delectus rem odit voluptates. Quas quasi assumenda quidem exercitationem nemo necessitatibus? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Tempora, eaque. Provident, eius quas, doloremque velit non, porro officia nulla delectus rem odit voluptates. Quas quasi assumenda quidem exercitationem nemo necessitatibus? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Tempora, eaque. Provident, eius quas, doloremque velit non, porro officia nulla delectus rem odit voluptates. Quas quasi assumenda quidem exercitationem nemo necessitatibus?
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!--
+    <div class="container-fluid container_img_JoLa">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 img_Jo_La">
+                <img src="../../assets/bilder/Joelle.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-2 display-4 text_JoLa">
+                <span>Joelle</span><br>
+                <span class="symbol_And">&</span><br>
+                <span>Landry</span>
+            </div>
+            <div class="col-lg-4 col-md-5 img_Jo_La">
+                <img src="../../assets/bilder/Landry.jpg" alt="">
+            </div>
+        </div>
+        <div class="div_message">
+            <h1>Nous allons nous marier</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque. Provident, eius quas, doloremque velit non, porro officia nulla delectus rem odit voluptates. Quas quasi assumenda quidem exercitationem nemo necessitatibus? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Tempora, eaque. Provident, eius quas, doloremque velit non, porro officia nulla delectus rem odit voluptates. Quas quasi assumenda quidem exercitationem nemo necessitatibus? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Tempora, eaque. Provident, eius quas, doloremque velit non, porro officia nulla delectus rem odit voluptates. Quas quasi assumenda quidem exercitationem nemo necessitatibus?
+            </p>
+        </div>
+    </div>
+
+    -->
+
+
+    <!--
+    <div class="div_NotreHistoire">
+        <h1 class="display-4 text-center">Notre Histoire</h1>
+        <app-notre-histoire></app-notre-histoire>
+    </div>
+-->
+</div>
+
+
+
+<br><br><br><br><br>
+
+<app-autres></app-autres>
